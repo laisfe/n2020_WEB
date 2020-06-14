@@ -14,13 +14,21 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+    
+    runtimeOnly 'com.oracle.ojdbc:ojdbc8'    
+    
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
-	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
-	providedRuntime 'org.apache.tomcat.embed:tomcat-embed-jasper'
+	
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
+	
+	providedRuntime 'javax.servlet:jstl'
+    providedRuntime 'org.apache.tomcat.embed:tomcat-embed-jasper'
+	
 }
 
 test {
