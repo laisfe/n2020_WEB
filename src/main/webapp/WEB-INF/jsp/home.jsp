@@ -225,7 +225,9 @@ body {
 	<nav class="navbar navbar-default navbar-static-top">
 		<div class="container">
 			<h3 class="text-nav">Botas Bot</h3>
-			<button type="button" class="btn btn-primary">Iniciar</button>
+			<a href="${contextPath}/bot">
+				<button type="button" class="btn btn-primary">Iniciar</button>
+			</a>
 			<img class="nav-images" src="resources/images/App-Store.png" /> <img
 				class="nav-images" src="resources/images/Google-Play.png" />
 		</div>
@@ -280,7 +282,9 @@ body {
 			<div class="wrapper">
 				<img class="bottom-images" src="resources/images/bot1.png" />
 				<div class="wrapper">
-					<button type="button" class="btn btn-primary">Iniciar</button>
+					<a href="${contextPath}/bot">
+						<button type="button" class="btn btn-primary">Iniciar</button>
+					</a>
 				</div>
 			</div>
 		</div>
